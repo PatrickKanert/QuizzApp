@@ -103,3 +103,9 @@ function resetAnswerButton() {
     document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
     document.getElementById('answer_4').parentNode.classList.remove('bg-success');
 }
+
+function showHtmlQuizz() {
+    document.getElementById('start-screen').classList.add('d-none');
+    document.getElementById('questionBody').classList.remove('d-none');
+
+}

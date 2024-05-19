@@ -17,7 +17,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="init()">
     <div class="main-container">
         <div class="card quiz-card">
 
@@ -27,14 +27,25 @@
                 <aside class="sidebar">
                     <img src="./img/logo.png">
                     <div class="sidebar-link-container">
-                        <a href="#home">HTML</a>
-                        <a href="#services">CCS</a>
-                        <a href="#clients">JS</a>
-                        <a href="#contact">Java</a>
+                        <a onclick="showHtmlQuizz()" href="#">HTML</a>
+                        <a href="#">CCS</a>
+                        <a href="#">JS</a>
+                        <a href="#">Java</a>
                     </div>
 
                 </aside>
-                <div class="card-body" id="questionBody">
+
+                <div id="start-screen" class="start-screen">
+                  <h1>Welcome to</h1>
+                  <h1>The Awesome HTML Quiz!</h1>
+                  <span>Ready for the Challenge?</span>
+                  <button onclick="showHtmlQuizz()" type="button" class="btn btn-primary position-absolute" style="bottom: 16px; right: 16px;">START NOW <b>></b></button>
+                </div>
+
+
+
+
+                <div class="card-body d-none" id="questionBody">
                     <h5 class="card-title" id="questiontext">Frage</h5>
             
                     <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
@@ -60,12 +71,14 @@
             
                     <div class="question-footer">
                       <span>
-                        <b id="question-number">1</b> von <b id="all-questions">2</b> Fragen
+                        <b id="question-number">1</b> von <b id="all-questions">5</b> Fragen
                       </span>
                       <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
                     </div>
             
                   </div>
+
+
             </div>
         </div>
     </div>
