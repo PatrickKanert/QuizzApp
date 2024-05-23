@@ -1,6 +1,7 @@
 body {
     background-color: #FEFAEF !important;
     min-height: 100vh;
+    font-family: 'Rubik' !important;
 }
 
 .main-container {
@@ -74,4 +75,43 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.end-screen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-light {
+    background-color: white !important;
+    border: none !important;
+    color: #0d6efd !important;
+}
+
+.btn {
+    --bs-btn-padding-x: 2.75rem !important;
+    margin-top: 16px;
+    --bs-btn-font-size: 1.5rem !important;
+}
+
+.complete-quiz {
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.score {
+    color: goldenrod;
+    padding-right: 48px;
+}
+
+.score-b {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.progress {
+    margin-bottom: 16px;
 }
